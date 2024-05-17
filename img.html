@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(window).on("load", function () {
+        if(count=5){
+        var count = 1;
+        $(".left").click(function () {
+
+          count++;
+          var src = $(".test").children("img").attr("src", `./${count}.png`);
+          console.log(count)
+      })}
+        else if(count<=6){
+            console.log("終了")
+        }
+          //   $(".test").append(`<img src=./${count}.png >`);
+
+        // $(".right").click(function () {
+        //   count--;
+        // $(".test").children("img").attr("src", `./${count}.png`);
+        // });
+    });
+    </script>
+  </head>
+  <body>
+    <button class="left">←</button>
+    <button class="right">→</button>
+    <div class="test">
+      <img src="./1.png" alt="" />
+    </div>
+    <!--
+        attr→HTML要素の属性を取得したり設定できる 対象要素.attr( 属性, （変更する値）
+        children→直下の子要素を取得する。
+
+
+    
+    -->
+  </body>
+</html>

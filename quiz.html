@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クイズゲーム</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".btn").click(function () {
+          console.log(this, "thisについて");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>あなたあ好きな食べ物は</p>
+    <p>
+      <input type="radio" name="food" value="1" />そば
+      <input type="radio" name="food" value="2" />うどん
+      <input type="radio" name="food" value="3" />ラーメン
+      <button class="btn">押せ</button>
+    </p>
+  </body>
+</html>
+<!-- 
+    $＝JQueryの別名
+    $("input")タグの指定
+    this=イベントが発生した要素(今回だとinput)
+    val()→value要素の取得
+    クリックした際に発火させたいイベントをfunctionで記述する？
+    clickに紐づくのがinputのためthisを使用した場合にinputが呼ばれる？
+    thisのとこをinputに変えると正解が無くなった
+    class→.
+    id→#
+-->
