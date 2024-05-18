@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<!-- スライダーのコンテナ -->
+<div class="swiper">
+    <!-- 必要に応じたwrapper -->
+    <div class="swiper-wrapper">
+    <!-- スライド -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- 必要に応じてページネーション -->
+    <div class="swiper-pagination"></div>
+    <!-- 必要に応じてナビボタン -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+<script>const swiper = new Swiper(".swiper", {
+    // ページネーションが必要なら追加
+    pagination: {
+      el: ".swiper-pagination"
+    },
+    // ナビボタンが必要なら追加
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });</script>
+</html>

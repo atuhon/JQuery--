@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- splideを使ったスライド作成 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="./style2.css">
+
+</head>
+<body>
+    <section id="image-carousel" class="splide" aria-label="お気に入りの写真">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide" >
+                      <img src="/1.png" alt="">
+                  </li>
+                  <li class="splide__slide" >
+                      <img src="/2.png" alt="">
+                  </li>
+                  <li class="splide__slide" >
+                      <img src="/3.png" alt="">
+                  </li>
+              </ul>
+        </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <script>
+        new Splide("#image-carousel",{
+            autoplay:true,
+            interval:300,
+            rewind:true,
+            pauseOnHover:true
+        }).mount();
+    </script>
+</body>
+
+
+</html>
