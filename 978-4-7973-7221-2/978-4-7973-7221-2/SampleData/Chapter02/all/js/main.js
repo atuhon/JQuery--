@@ -1,14 +1,9 @@
 $(function(){
-   $('#typo').animate({
-    opacity:0,
-    fontSize:'12px'
-   },1500)
-
-  
-
-
-})
+function ChangeColor(){
+    $(this).css('color','red')
+};
+$('#typo').on('mouseover',ChangeColor);
+$('header').on('mouseover',ChangeColor);
+});
 //on→特定のイベントが起こるタイミングに実行したい命令を記述する
-$(function(){
-   console.log( $('#typo').css('color'))
-})
+//this→onメソッドに指定してあるイベントが発生した要素が格納される
